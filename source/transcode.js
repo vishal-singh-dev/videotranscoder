@@ -40,7 +40,7 @@ const transcodeHandler = async (req, res) => {
 
     // Send response with links to download the transcoded files
     res.json({
-      message: 'Transcoding completed',
+      message: 'Transcoding completed Successfully',
       files: Object.fromEntries(Object.entries(resolutions).map(([key, { path }]) => [key, path])),
     });
 
